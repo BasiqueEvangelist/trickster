@@ -1,0 +1,11 @@
+dependencies {
+    minecraft "com.mojang:minecraft:${property('deps.minecraft')}"
+    mappings "net.fabricmc:yarn:${property('deps.yarn')}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+    modImplementation(project(":"))
+
+    modApi("com.github.Virtuoel:Pehkui:${property('deps.pehkui')}", {
+        exclude group: "net.fabricmc.fabric-api"
+    })
+}

@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "trickster_pehkui",
+	"version": "${version}",
+	"name": "Trickster: Pehkui Compat",
+	"description": "Trickster compatibility patches for Pehkui.",
+	"authors": [
+		"enjarai"
+	],
+	"contact": {
+		"homepage": "https://enjarai.dev/",
+		"sources": "https://github.com/enjarai/trickster",
+		"issues": "https://github.com/enjarai/trickster/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/trickster_pehkui/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.enjarai.trickster.compat.pehkui.TricksterPehkui"
+		]
+	},
+	"depends": {
+		"pehkui": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"parent": {
+				"id": "trickster"
+			}
+		},
+		"cardinal-components": [
+		]
+	}
+}
